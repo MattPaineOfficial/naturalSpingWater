@@ -47,6 +47,7 @@ nav img {
     height: 50px;
 }
 
+
 /* Mobile Screen Size Changes */
 @media only screen and (max-width: 720px) {
     /* Hides Navbar Links */
@@ -60,11 +61,17 @@ nav img {
         margin-right: auto;
         height: 85px;
     }
+
+    footer img {
+        margin-left: auto;
+        margin-right: auto;
+        height: 85px;
+    }
 }
 
 
 /* Our Mission Section*/
-.mission {
+#mission {
     background-image: url("./images/mountains_bg.jpg");
     background-position: center;
     padding-top: 150px;
@@ -87,8 +94,8 @@ nav img {
 }
 
 
-/* Tea of the Month Section*/
-.tea_of_month {
+/* Our Process Section*/
+#process {
     max-width: 1000px;
     margin: 0 auto;
     padding: 50px 0;
@@ -98,7 +105,7 @@ nav img {
     flex-direction: column;
 }
 
-.tea_imgs {
+.process_imgs {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,63 +117,39 @@ nav img {
     font-style: italic;
 }
 
-.tea_imgs img {
+.process_imgs img {
     width: 300px;
     height: 200px;
     padding: 10px;
 }
 
 
-/* Locations Section */
-.locations {
-    background-image: url("./images/waste_bottles.jpg");
-    background-position: center;
-    height: 500px;
-    max-width: 1200px;
-    margin: auto;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#local_title {
-    background-color: #91c4c0;
+/* Our Commitments Section */
+#commits{ 
+    min-height:500px;
     width: 100%;
-    margin: 25px auto;
-    opacity: 0.8;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    background-image:url("./images/waste_bottles.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+    line-height: 35px;
 }
 
-.local_cont {
+.commits-boxes{
+    margin: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    background-color: transparent;
+    flex-wrap: wrap;
+}
+.commits-items{
+    background-color: black;
+    width: 300px;
+    margin: 30px;
 }
 
-.local_item {
-    /* background-color: #65c3bb; */
-    opacity: 0.8;
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-
-    width: 220px;
-    height: 220px;
-    margin: 15px 20px;
-    padding: 15px 40px;
-    line-height: 3;
-}
-
-.local_item p {
+.commits-items p {
     font-style: italic;
-    /* background-color: #65c3bb; */
 }
 
 
